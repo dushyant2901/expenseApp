@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+    <div class="container">
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by the customer and know minimum umber of notes to return</p>
+
+        <label for="bill-Amount">Bill Amount</label>
+        <input type="text" id="bill-Amount">
+
+        <label for="cash-Given">Cash Given</label>
+        <input type="text" id="cash-Given">
+
+        <button id="check-Btn">check</button>
+        <p id="message">something</p>
+
+        <table>
+            <caption>Return Change</caption>
+            <tr>
+                <th>NO. of notes</th>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                <td class="noteCount"></td>
+                
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>2000</td>
+                <td>500</td>
+                <td>100</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </table>
+
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
