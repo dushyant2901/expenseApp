@@ -14,20 +14,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
 }
 
 .container{
 width: 70vh;
-
+margin-top: 1.5rem;
 background-color: rgb(255, 172, 172);
 padding: 1rem;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-gap: 0.8rem;
-font-size: 1.3rem;
+gap: 0.5rem;
+font-size: 1.2rem;
 border-radius: 0.5rem;
 text-align: center;
 }
@@ -45,20 +45,20 @@ label{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 input{
     width: 50%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0.3rem;
     border-radius: 0.3rem;
     border-color: brown;
     outline: none;
 }
 #check-Btn{
-    font-size: 1.3rem;
-    padding:0.35rem 1rem;
+    font-size: 1.2rem;
+    padding:0.35rem 0.65rem;
     border-radius: 1rem;
     margin: 0.25rem auto;
     display: block;
@@ -83,4 +83,37 @@ td{color: red;
    padding: 0.6rem;
   
 }
+main{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    
+    border-top-right-radius: 1rem;
+    height: 15vh;
+    color: var(--primary-green);
+  }
+  .footer-heading{font-weight: bold;
+    font-size: large;
+  }
+  .footer .link{
+    color: var(--primary-green);
+    text-decoration: none;
+  }
+  .footer ul{
+    padding-inline-start: 0px;
+    list-style: none;
+  }
+  .footer .list-unbulleted-list{display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  gap: 1.5rem;
+  }
 
