@@ -10,14 +10,17 @@ checkBtn.addEventListener("click", validateAmount)
 function validateAmount() {
     hideMessage()
 
-    if (billAmount.value >= 0) {
+    if (billAmount.value > 0) {
         if (cashGiven.value >= billAmount.value) {
 
             let changeAmount = cashGiven.value - billAmount.value;
-console.log("kkkkkkkkkkkkkkkkkk")
+            console.log("kkkkkkkkkkkkkkkkkk")
             calculateNotes(changeAmount);
         }
-        else { showMessage("Cash given should be greater than or at least equal to bill amount") }
+        else {
+            console.log("yo")
+            showMessage("Cash given should be greater than or at least equal to bill amount")
+        }
 
 
 
