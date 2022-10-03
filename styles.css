@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   border-radius: 0.5rem;
   text-align: center;
 }
@@ -39,6 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 80%;
+  margin-top: 1.5rem;
 }
 
 label {
@@ -46,7 +47,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
 }
 input {
   width: 50%;
@@ -61,6 +62,7 @@ input {
   justify-content: center;
   align-content: center;
   gap: 2rem;
+  margin-top: 1.5rem;
 }
 .btn {
   font-size: 1.3rem;
@@ -85,6 +87,7 @@ input {
 
 table {
   padding: 0.15rem;
+  display: none;
 }
 td {
   color: red;
@@ -101,18 +104,22 @@ main {
   background-color: var(--primary-color);
   padding: 2rem 1rem;
   text-align: center;
-
+  font-size: 1.5rem;
   border-top-right-radius: 1rem;
   height: 15vh;
   color: var(--primary-green);
 }
 .footer-heading {
   font-weight: bold;
-  font-size: large;
+
+  font-size: 1.75rem;
 }
 .footer .link {
   color: var(--primary-green);
   text-decoration: none;
+}
+.footer .link:hover {
+  opacity: 70%;
 }
 .footer ul {
   padding-inline-start: 0px;
