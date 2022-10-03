@@ -7,8 +7,20 @@ const noteCount = document.querySelectorAll(".noteCount");
 const table = document.querySelector(".table");
 const notes = [2000, 500, 100, 20, 10, 5, 1];
 
-checkBtn.addEventListener("click", validateAmount);
+function showMessage(msg) {
+  message.innerHTML = msg;
+}
 
+function hideElem(elem) {
+  elem.style.display = "none";
+}
+function showElem(elem) {
+  elem.style.display = "block";
+}
+
+function convertStrToNum(val) {
+  return Number(val);
+}
 function validateAmount() {
   hideElem(message);
   const billAmountVal = convertStrToNum(billAmount.value);
@@ -17,10 +29,9 @@ function validateAmount() {
   if (billAmountVal > 0) {
     if (cashGivenVal >= billAmountVal) {
       let changeAmount = cashGivenVal - billAmountVal;
-      if (changeAmount) {
-        calculateNotes(changeAmount);
-        showElem(table);
-      }
+
+      calculateNotes(changeAmount);
+      showElem(table);
     } else {
       showMessage(
         "Cash given should be greater than or at least equal to bill amount"
@@ -33,17 +44,6 @@ function validateAmount() {
   }
 }
 
-function showMessage(msg) {
-  message.innerHTML = msg;
-}
-
-function hideElem(elem) {
-  elem.style.display = "none";
-}
-function showElem(elem) {
-  elem.style.display = "block";
-}
-
 function calculateNotes(amount) {
   for (let i = 0; i < notes.length; i++) {
     const numberOfNotes = Math.trunc(amount / notes[i]);
@@ -51,13 +51,12 @@ function calculateNotes(amount) {
     noteCount[i].innerText = numberOfNotes;
   }
 }
-function convertStrToNum(val) {
-  return Number(val);
-}
-clearBtn.addEventListener("click", () => {
-  console.log("first");
+function clear() {
   billAmount.value = "";
   cashGiven.value = "";
   noteCount.forEach((count) => (count.innerText = ""));
   hideElem(table);
-});
+  hideElem(message);
+}
+clearBtn.addEventListener("click", clear);
+checkBtn.addEventListener("click", validateAmount);
