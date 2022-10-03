@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
- <main class="wrapper">
-  
-    <div class="container">
+  <body>
+    <main class="wrapper">
+      <div class="container">
         <h1>Cash Register Manager</h1>
-        <p>Enter the bill amount and cash given by the customer and know minimum umber of notes to return</p>
-<div class="input-wrapper">
-        <label for="bill-Amount">Bill Amount:
-        <input type="text" id="bill-Amount"></label>
+        <p>
+          Enter the bill amount and cash given by the customer and know minimum
+          umber of notes to return
+        </p>
+        <div class="input-wrapper">
+          <label for="bill-Amount"
+            >Bill Amount:
+            <input type="number" min="0" required id="bill-Amount"
+          /></label>
 
-        <label for="cash-Given">Cash Given:
-        <input type="text" id="cash-Given"></label>
-
-        <button id="check-Btn">check</button>
-        <p id="message"></p>
-    </div>
-        <table>
-            <caption>Return Change</caption>
-            <tr>
-                <th>NO. of notes</th>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                <td class="noteCount"></td>
-                
-            </tr>
-            <tr>
-                <th>Notes</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
-
-    </div>
-  
-</main>
-    <footer class="footer" >
-        <div class="footer-heading" >
-        My Online Profiles
+          <label for="cash-Given"
+            >Cash Given: <input type="number" required min="0" id="cash-Given"
+          /></label>
+          <div class="btn-wrapper">
+            <button id="clear-Btn" class="btn">clear</button>
+            <button id="check-Btn" class="btn">check</button>
+          </div>
+          <p id="message"></p>
         </div>
-        
-        <ul class="list-unbulleted-list" >
-          <li class="list-item-inline" >
-            <a class="link" href="https://github.com/dushyant2901">Github</a>
-          </li>
-          <li class="list-item-inline">
-          <a class="link" href="https://twitter.com/Dushyan61991113"> Twitter</a>
-        
-          </li>
-          <li class="list-item-inline" >
-           <a class="link" href="https://in.linkedin.com/in/dushyant-pratap-singh-04b24619b">Linkedin</a>
-          </li>
-        </ul>
-        </footer >
-    <script src="app.js"></script>
-</body>
+        <table class="table">
+          <caption>
+            Return Change
+          </caption>
+          <tr>
+            <th>NO. of notes</th>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+            <td class="noteCount"></td>
+          </tr>
+          <tr>
+            <th>Notes</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-heading">My Online Profiles</div>
 
+      <ul class="list-unbulleted-list">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/dushyant2901">Github</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://twitter.com/Dushyan61991113">
+            Twitter</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://in.linkedin.com/in/dushyant-pratap-singh-04b24619b"
+            >Linkedin</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>
