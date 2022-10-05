@@ -37,10 +37,12 @@ function validateAmount() {
         "Cash given should be greater than or at least equal to bill amount"
       );
       showElem(message);
+      hideElem(table);
     }
   } else {
     showMessage("The bill amount should be greater than 0");
     showElem(message);
+    hideElem(table);
   }
 }
 
