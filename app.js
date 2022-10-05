@@ -7,20 +7,23 @@ const noteCount = document.querySelectorAll(".noteCount");
 const table = document.querySelector(".table");
 const notes = [2000, 500, 100, 20, 10, 5, 1];
 
+// show message
 function showMessage(msg) {
   message.innerHTML = msg;
 }
-
+// hide element
 function hideElem(elem) {
   elem.style.display = "none";
 }
+// show element
 function showElem(elem) {
   elem.style.display = "block";
 }
-
+// converting string to number
 function convertStrToNum(val) {
   return Number(val);
 }
+// validating amount
 function validateAmount() {
   hideElem(message);
   const billAmountVal = convertStrToNum(billAmount.value);
@@ -46,6 +49,7 @@ function validateAmount() {
   }
 }
 
+// to calculate notes for the remainder amount
 function calculateNotes(amount) {
   for (let i = 0; i < notes.length; i++) {
     const numberOfNotes = Math.trunc(amount / notes[i]);
@@ -53,6 +57,7 @@ function calculateNotes(amount) {
     noteCount[i].innerText = numberOfNotes;
   }
 }
+// to clear all the values
 function clear() {
   billAmount.value = "";
   cashGiven.value = "";
@@ -60,5 +65,7 @@ function clear() {
   hideElem(table);
   hideElem(message);
 }
+// attaching eventlistener to clearbtn
 clearBtn.addEventListener("click", clear);
+// attaching eventlistener to checkbtn
 checkBtn.addEventListener("click", validateAmount);
