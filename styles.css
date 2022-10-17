@@ -100,30 +100,41 @@ main {
   justify-content: center;
 }
 
+.social-icon {
+  height: 35px;
+  transition: var(--mainTransition);
+}
+.social-icon:hover {
+  height: 35px;
+  transform: translateY(-5px);
+}
+
 .footer {
   background-color: var(--primary-color);
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
-  font-size: 1.5rem;
-  border-top-right-radius: 1rem;
-  height: 15vh;
   color: var(--primary-green);
+  border-top-right-radius: 1rem;
 }
 .footer-heading {
   font-weight: bold;
-
-  font-size: 1.75rem;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.875rem;
 }
 .footer .link {
-  color: var(--primary-green);
-  text-decoration: none;
-}
-.footer .link:hover {
-  opacity: 70%;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 1.35px;
+  display: inline-block;
+  padding: 0;
 }
 .footer ul {
   padding-inline-start: 0px;
-  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style-type: none;
 }
 .footer .list-unbulleted-list {
   display: flex;
